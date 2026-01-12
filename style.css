@@ -119,6 +119,13 @@ body {
     margin-left: 240px;
 }
 
+#sidebar a.active {
+  background: rgba(140, 80, 255, 0.2);
+  color: #b47cff;
+  font-weight: bold;
+  border-left: 3px solid #9b5cff;
+}
+
 
 
 
