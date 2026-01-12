@@ -57,11 +57,19 @@ nav a:hover {
 /* ================= LAYOUT ================= */
 
 .container {
-  max-width: 1000px;
+  max-width: 1120px;
   margin-left: 260px;
   margin-top: 64px;
   margin-right: auto;
   padding: 40px;
+}
+p {
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+ul li {
+  margin-bottom: 6px;
 }
 
 /* ================= TITLES ================= */
