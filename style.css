@@ -93,13 +93,30 @@ h1, h2 {
   left: 0;
   width: 220px;
   height: calc(100vh - 64px);
-#sidebar {
   background: #0a0a14; /* sólido */
   padding: 15px;
   overflow-y: auto;
   z-index: 500;
 }
 
+#sidebar a {
+  opacity: 0.7;
+}
+
+#sidebar a:hover,
+#sidebar a.active {
+  opacity: 1;
+}
+
+.sidebar-group {
+  margin-top: 18px;
+  margin-bottom: 6px;
+  color: #9b59ff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
 
 
 #sidebar h2 {
