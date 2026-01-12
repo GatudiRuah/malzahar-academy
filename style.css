@@ -135,4 +135,26 @@ body {
   font-weight: bold;
   border-left: 3px solid #9b5cff;
 }
+#backToTop {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #8b5cff, #4b00ff);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(140, 80, 255, 0.6);
+  opacity: 0;
+  pointer-events: auto;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  z-index: 2000;
+}
+
+#backToTop:hover {
+  transform: scale(1.1);
+}
 
