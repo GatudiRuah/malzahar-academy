@@ -78,13 +78,15 @@ h1, h2 {
     border-radius: 10px;
 }
 
-/* RODAPÉ */
-.footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #6a00ff55;
-    color: #888;
+.site-footer {
+  text-align: center;
+  padding: 24px 0;
+  color: #aaa;
+  font-size: 14px;
+  border-top: 1px solid rgba(155, 95, 255, 0.3);
+  margin-top: 40px;
 }
+
 #sidebar {
   position: fixed;
   top: 64px;
