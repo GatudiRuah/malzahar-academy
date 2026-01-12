@@ -19,9 +19,22 @@
   </nav>
 </header>
 
-<button id="backToTop">⬆</button>
-
 <div class="container">
+  <button id="backToTop">⬆</button>
+  <script>
+const btn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  btn.style.opacity = window.scrollY > 300 ? "1" : "0";
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+</body>
+</html>
   <h1>Matchups de Malzahar (A–Z)</h1>
 
   <div class="card" id="ahri">
@@ -4227,18 +4240,5 @@ window.addEventListener("scroll", () => {
 <a data-target="zoe" href="#zoe">Zoe</a>
 </div>
 
-<script>
-const btn = document.getElementById("backToTop");
-
-window.addEventListener("scroll", () => {
-  btn.style.opacity = window.scrollY > 300 ? "1" : "0";
-});
-
-btn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-</script>
-
-</body>
 </html>
 
