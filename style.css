@@ -3,13 +3,14 @@ html {
 }
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: #0a0a0f;
-    color: #e5e5f0;
+  background: #0b0b10;
+  color: #eaeaea;
+  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
 }
 
-/* HEADER FIXO */
+/* ================= HEADER ================= */
+
 header {
   position: fixed;
   top: 0;
@@ -18,65 +19,63 @@ header {
   height: 64px;
   background: linear-gradient(90deg, #2a004f, #0a0a0f);
   border-bottom: 2px solid #6a00ff;
-  z-index: 1000; /* maior que o sidebar */
+  z-index: 1000;
   display: flex;
   align-items: center;
 }
 
+/* ================= MENU ================= */
 
-/* MENU */
 nav {
-    width: 100%;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
 }
 
-/* LINKS DO MENU */
 nav a {
-    color: #ffffff;
-    margin-right: 24px;
-    text-decoration: none;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    letter-spacing: 0.5px;
+  color: #ffffff;
+  margin-right: 24px;
+  text-decoration: none;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.5px;
 }
 
 nav a:hover {
-    color: #c8b6ff;
+  color: #c8b6ff;
 }
 
-/* CONTEÚDO */
-.container {
-    max-width: 1000px;
-    margin-left: 260px;
-    margin-top: 64px;
-    margin-right: auto;
-    padding: 40px;
-}
-
+/* ================= LAYOUT ================= */
 
 .container {
-    margin-left: 260px;
-    margin-top: 64px;
+  max-width: 1000px;
+  margin-left: 260px;
+  margin-top: 64px;
+  margin-right: auto;
+  padding: 40px;
 }
 
+/* ================= TITLES ================= */
 
-/* TÍTULOS */
 h1, h2 {
-    color: #b47cff;
+  color: #b47cff;
 }
 
-/* CARDS */
+/* ================= CARDS ================= */
+
 .card {
-    background: #13131c;
-    border: 1px solid #6a00ff55;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+  background: #13131c;
+  border: 1px solid #6a00ff55;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  line-height: 1.65;
 }
+
+/* ================= FOOTER ================= */
 
 .site-footer {
   text-align: center;
@@ -87,19 +86,35 @@ h1, h2 {
   margin-top: 40px;
 }
 
+/* ================= SIDEBAR ================= */
+
 #sidebar {
   position: fixed;
   top: 64px;
   left: 0;
   width: 220px;
   height: calc(100vh - 64px);
-  background: #0a0a14; /* sólido */
+  background: #0a0a14;
   padding: 15px;
   overflow-y: auto;
   z-index: 500;
 }
 
+#sidebar h2 {
+  color: #9b59ff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 #sidebar a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  transition: 0.2s;
+  font-size: 14px;
   opacity: 0.7;
 }
 
@@ -107,6 +122,20 @@ h1, h2 {
 #sidebar a.active {
   opacity: 1;
 }
+
+#sidebar a:hover {
+  background: #9b59ff;
+  color: black;
+}
+
+#sidebar a.active {
+  background: rgba(140, 80, 255, 0.2);
+  color: #b47cff;
+  font-weight: bold;
+  border-left: 3px solid #9b5cff;
+}
+
+/* ================= SIDEBAR GROUPS ================= */
 
 .sidebar-group {
   margin-top: 18px;
@@ -118,50 +147,26 @@ h1, h2 {
   opacity: 0.6;
 }
 
+/* ================= MATCHUP VISUAL ================= */
 
-#sidebar h2 {
-    color: #9b59ff;
-    text-align: center;
-    margin-bottom: 15px;
+.matchup-box h2 {
+  margin-top: 36px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(155, 95, 255, 0.25);
+  font-size: 22px;
 }
 
-#sidebar a {
-    display: block;
-    color: #ddd;
-    text-decoration: none;
-    padding: 6px 10px;
-    border-radius: 6px;
-    margin-bottom: 4px;
-    transition: 0.2s;
-    font-size: 14px;
+.matchup-box h3 {
+  font-size: 16px;
+  color: #c9a6ff;
 }
 
-#sidebar a:hover {
-    background: #9b59ff;
-    color: black;
-}
-
-body {
-    background: #0b0b10;
-    color: #eaeaea;
-    font-family: "Inter", sans-serif;
-    margin: 0;
-}
-
-#sidebar a.active {
-  background: rgba(140, 80, 255, 0.2);
-  color: #b47cff;
-  font-weight: bold;
-  border-left: 3px solid #9b5cff;
-}
+/* ================= BACK TO TOP ================= */
 
 #backToTop {
   position: fixed;
   bottom: 32px;
-
-  /* Posiciona em relação ao conteúdo central */
   right: calc((100vw - 1000px) / 2 + 32px);
-
   width: 42px;
   height: 42px;
   background: linear-gradient(135deg, #8c52ff, #b266ff);
@@ -180,26 +185,3 @@ body {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(140, 82, 255, 0.9);
 }
-
-/* Melhor legibilidade dos cards */
-.card {
-  line-height: 1.65;
-}
-
-/* Separadores visuais dentro dos matchups */
-.matchup-box h2 {
-  margin-top: 36px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(155, 95, 255, 0.25);
-}
-
-/* Títulos mais imponentes */
-.matchup-box h2 {
-  font-size: 22px;
-}
-
-.matchup-box h3 {
-  font-size: 16px;
-  color: #c9a6ff;
-}
-
