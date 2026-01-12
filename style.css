@@ -1,5 +1,9 @@
 /* ================= RESET ================= */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,12 +26,10 @@ header {
   height: 64px;
   background: linear-gradient(90deg, #2a004f, #0a0a0f);
   border-bottom: 2px solid #6a00ff;
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   align-items: center;
 }
-
-/* ================= MENU ================= */
 
 nav {
   width: 100%;
@@ -37,46 +39,15 @@ nav {
 }
 
 nav a {
-  color: #ffffff;
+  color: #fff;
   margin-right: 24px;
   text-decoration: none;
-  font-weight: 800;
-  letter-spacing: 0.5px;
+  font-weight: 700;
   font-size: 14px;
 }
 
 nav a:hover {
   color: #c8b6ff;
-}
-
-/* ================= LAYOUT ================= */
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 24px 80px;
-}
-
-/* ================= TITLES ================= */
-
-h1, h2, h3 {
-  color: #b47cff;
-}
-
-.container h1 {
-  font-size: 36px;
-  margin-bottom: 24px;
-}
-
-.container h2 {
-  font-size: 22px;
-  margin-bottom: 12px;
-}
-
-.container p {
-  font-size: 16px;
-  color: #ddd;
-  line-height: 1.7;
 }
 
 /* ================= HERO ================= */
@@ -107,11 +78,11 @@ h1, h2, h3 {
   text-align: center;
   max-width: 800px;
   padding: 40px;
+  z-index: 2;
 }
 
 .hero h1 {
   font-size: 52px;
-  font-weight: 800;
   color: #caa6ff;
   margin-bottom: 16px;
 }
@@ -123,6 +94,7 @@ h1, h2, h3 {
 }
 
 .hero .cta {
+  display: inline-block;
   padding: 14px 28px;
   background: linear-gradient(135deg, #8c52ff, #b266ff);
   color: #fff;
@@ -130,7 +102,7 @@ h1, h2, h3 {
   font-weight: 700;
   text-decoration: none;
   box-shadow: 0 0 25px rgba(140,82,255,0.6);
-  transition: 0.2s ease;
+  transition: 0.2s;
 }
 
 .hero .cta:hover {
@@ -138,13 +110,43 @@ h1, h2, h3 {
   box-shadow: 0 0 40px rgba(140,82,255,0.9);
 }
 
+/* ================= LAYOUT ================= */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+/* ================= TEXT ================= */
+
+h1, h2, h3 {
+  color: #b47cff;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.container h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.7;
+}
+
 /* ================= CARDS ================= */
 
 .card {
   background: #13131c;
-  border: 1px solid #6a00ff55;
+  border: 1px solid rgba(106,0,255,0.4);
   padding: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   border-radius: 12px;
 }
 
@@ -155,8 +157,59 @@ h1, h2, h3 {
   padding: 24px 0;
   color: #aaa;
   font-size: 14px;
-  border-top: 1px solid rgba(155, 95, 255, 0.3);
+  border-top: 1px solid rgba(155,95,255,0.3);
   margin-top: 40px;
+}
+
+/* ================= SIDEBAR (MATCHUPS) ================= */
+
+#sidebar {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 220px;
+  height: calc(100vh - 64px);
+  background: #0a0a14;
+  padding: 15px;
+  overflow-y: auto;
+  z-index: 500;
+}
+
+#sidebar h2 {
+  color: #9b59ff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#sidebar a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+#sidebar a:hover {
+  background: #9b59ff;
+  color: #000;
+  opacity: 1;
+}
+
+#sidebar a.active {
+  background: rgba(140,80,255,0.25);
+  color: #caa6ff;
+  font-weight: bold;
+  opacity: 1;
+}
+
+/* ================= MATCHUPS CONTENT ================= */
+
+.matchups-content {
+  margin-left: 220px;
+  padding: 40px;
 }
 
 /* ================= LIVE BANNER ================= */
@@ -164,30 +217,18 @@ h1, h2, h3 {
 .live-banner {
   position: fixed;
   right: 24px;
-  top: 120px;
-  z-index: 9999;
+  top: 140px;
   width: 180px;
-  transition: transform 0.2s ease;
+  z-index: 9999;
 }
 
 .live-banner img {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 0 20px rgba(140,82,255,0.6));
+  transition: 0.2s;
 }
 
-.live-banner:hover {
+.live-banner:hover img {
   transform: scale(1.05);
-}
-/* ================= LAYOUT MATCHUPS ================= */
-
-.layout {
-  display: flex;
-}
-
-.content {
-  margin-left: 220px; /* mesma largura do sidebar */
-  padding: 40px;
-  width: calc(100% - 220px);
-  min-height: 100vh;
 }
