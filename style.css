@@ -140,9 +140,11 @@ body {
 
 #backToTop {
   position: fixed;
-  right: 24px;
-  bottom: 24px;
-  left: auto;
+  bottom: 32px;
+
+  /* Posiciona em relação ao conteúdo central */
+  right: calc((100vw - 1000px) / 2 + 32px);
+
   width: 42px;
   height: 42px;
   background: linear-gradient(135deg, #8c52ff, #b266ff);
@@ -161,3 +163,5 @@ body {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(140, 82, 255, 0.9);
 }
+
+
