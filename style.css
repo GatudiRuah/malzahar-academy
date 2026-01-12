@@ -9,7 +9,7 @@ body {
   color: #eaeaea;
   font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
   margin: 0;
-  padding-top: 64px; /* compensa header fixo */
+  padding-top: 64px;
 }
 
 /* ================= HEADER ================= */
@@ -41,9 +41,6 @@ nav a {
   margin-right: 24px;
   text-decoration: none;
   font-weight: 800;
-  display: flex;
-  align-items: center;
-  gap: 6px;
   letter-spacing: 0.5px;
   font-size: 14px;
 }
@@ -57,7 +54,7 @@ nav a:hover {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 24px 80px;
+  padding: 60px 24px 80px;
 }
 
 /* ================= TITLES ================= */
@@ -86,166 +83,10 @@ h1, h2, h3 {
 
 .hero {
   position: relative;
-  padding: 80px 40px 80px;
-  background: radial-gradient(circle at top, rgba(140,82,255,0.15), transparent 60%);
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: 800;
-  color: #caa6ff;
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: 0 auto 32px;
-  color: #d6c7ff;
-}
-
-.hero .cta {
-  display: inline-block;
-  padding: 14px 28px;
-  background: linear-gradient(135deg, #8c52ff, #b266ff);
-  color: #fff;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 0 25px rgba(140,82,255,0.6);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hero .cta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(140,82,255,0.9);
-}
-
-/* ================= CARDS ================= */
-
-.card {
-  background: #13131c;
-  border: 1px solid #6a00ff55;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-/* ================= FOOTER ================= */
-
-.site-footer,
-.footer {
-  text-align: center;
-  padding: 24px 0;
-  color: #aaa;
-  font-size: 14px;
-  border-top: 1px solid rgba(155, 95, 255, 0.3);
-  margin-top: 40px;
-}
-
-/* ================= SIDEBAR ================= */
-
-#sidebar {
-  position: fixed;
-  top: 64px;
-  left: 0;
-  width: 220px;
-  height: calc(100vh - 64px);
-  background: #0a0a14;
-  padding: 15px;
-  overflow-y: auto;
-  z-index: 500;
-}
-
-#sidebar h2 {
-  color: #9b59ff;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-#sidebar a {
-  display: block;
-  color: #ddd;
-  text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 6px;
-  margin-bottom: 4px;
-  transition: 0.2s;
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-#sidebar a:hover {
-  background: #9b59ff;
-  color: black;
-  opacity: 1;
-}
-
-#sidebar a.active {
-  background: rgba(140, 80, 255, 0.2);
-  color: #b47cff;
-  font-weight: bold;
-  border-left: 3px solid #9b5cff;
-  opacity: 1;
-}
-
-/* ================= SIDEBAR GROUPS ================= */
-
-.sidebar-group {
-  margin-top: 18px;
-  margin-bottom: 6px;
-  color: #9b59ff;
-  font-size: 11px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  opacity: 0.6;
-}
-
-/* ================= MATCHUP ================= */
-
-.matchup-box h2 {
-  margin-top: 36px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(155, 95, 255, 0.25);
-  font-size: 22px;
-}
-
-.matchup-box h3 {
-  font-size: 16px;
-  color: #c9a6ff;
-}
-
-/* ================= BACK TO TOP ================= */
-
-#backToTop {
-  position: fixed;
-  bottom: 32px;
-  right: clamp(16px, 4vw, 32px);
-  width: 42px;
-  height: 42px;
-  background: linear-gradient(135deg, #8c52ff, #b266ff);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 9999;
-  box-shadow: 0 0 15px rgba(140, 82, 255, 0.6);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.2s ease;
-}
-
-#backToTop:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(140, 82, 255, 0.9);
-}
-
-.hero {
-  position: relative;
   min-height: 70vh;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,6 +111,7 @@ h1, h2, h3 {
 
 .hero h1 {
   font-size: 52px;
+  font-weight: 800;
   color: #caa6ff;
   margin-bottom: 16px;
 }
@@ -296,3 +138,44 @@ h1, h2, h3 {
   box-shadow: 0 0 40px rgba(140,82,255,0.9);
 }
 
+/* ================= CARDS ================= */
+
+.card {
+  background: #13131c;
+  border: 1px solid #6a00ff55;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+  text-align: center;
+  padding: 24px 0;
+  color: #aaa;
+  font-size: 14px;
+  border-top: 1px solid rgba(155, 95, 255, 0.3);
+  margin-top: 40px;
+}
+
+/* ================= LIVE BANNER ================= */
+
+.live-banner {
+  position: fixed;
+  right: 24px;
+  top: 120px;
+  z-index: 9999;
+  width: 180px;
+  transition: transform 0.2s ease;
+}
+
+.live-banner img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(140,82,255,0.6));
+}
+
+.live-banner:hover {
+  transform: scale(1.05);
+}
