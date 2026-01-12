@@ -140,8 +140,9 @@ body {
 
 #backToTop {
   position: fixed;
-  left: 14px;
+  right: 24px;
   bottom: 24px;
+  left: auto;
   width: 42px;
   height: 42px;
   background: linear-gradient(135deg, #8c52ff, #b266ff);
