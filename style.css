@@ -1,3 +1,5 @@
+/* ================= RESET ================= */
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,6 +9,7 @@ body {
   color: #eaeaea;
   font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
   margin: 0;
+  padding-top: 64px; /* compensa header fixo */
 }
 
 /* ================= HEADER ================= */
@@ -42,6 +45,7 @@ nav a {
   align-items: center;
   gap: 6px;
   letter-spacing: 0.5px;
+  font-size: 14px;
 }
 
 nav a:hover {
@@ -56,14 +60,66 @@ nav a:hover {
   padding: 40px 24px 80px;
 }
 
-body {
-  padding-top: 64px; /* compensa o header fixo */
-}
-
 /* ================= TITLES ================= */
 
-h1, h2 {
+h1, h2, h3 {
   color: #b47cff;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.container h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.container p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.7;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+  padding: 80px 40px 80px;
+  background: radial-gradient(circle at top, rgba(140,82,255,0.15), transparent 60%);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #caa6ff;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 32px;
+  color: #d6c7ff;
+}
+
+.hero .cta {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #8c52ff, #b266ff);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(140,82,255,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero .cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(140,82,255,0.9);
 }
 
 /* ================= CARDS ================= */
@@ -74,12 +130,12 @@ h1, h2 {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  line-height: 1.65;
 }
 
 /* ================= FOOTER ================= */
 
-.site-footer {
+.site-footer,
+.footer {
   text-align: center;
   padding: 24px 0;
   color: #aaa;
@@ -120,14 +176,10 @@ h1, h2 {
   opacity: 0.7;
 }
 
-#sidebar a:hover,
-#sidebar a.active {
-  opacity: 1;
-}
-
 #sidebar a:hover {
   background: #9b59ff;
   color: black;
+  opacity: 1;
 }
 
 #sidebar a.active {
@@ -135,6 +187,7 @@ h1, h2 {
   color: #b47cff;
   font-weight: bold;
   border-left: 3px solid #9b5cff;
+  opacity: 1;
 }
 
 /* ================= SIDEBAR GROUPS ================= */
@@ -149,7 +202,7 @@ h1, h2 {
   opacity: 0.6;
 }
 
-/* ================= MATCHUP VISUAL ================= */
+/* ================= MATCHUP ================= */
 
 .matchup-box h2 {
   margin-top: 36px;
@@ -168,7 +221,7 @@ h1, h2 {
 #backToTop {
   position: fixed;
   bottom: 32px;
-  right: calc((100vw - 1000px) / 2 + 32px);
+  right: clamp(16px, 4vw, 32px);
   width: 42px;
   height: 42px;
   background: linear-gradient(135deg, #8c52ff, #b266ff);
@@ -186,61 +239,4 @@ h1, h2 {
 #backToTop:hover {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(140, 82, 255, 0.9);
-}
-/* ================= HERO ================= */
-
-.hero {
-  position: relative;
-  padding: 120px 40px 80px;
-  background: radial-gradient(circle at top, rgba(140,82,255,0.15), transparent 60%);
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: 800;
-  color: #caa6ff;
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: 0 auto 32px;
-  color: #d6c7ff;
-  line-height: 1.7;
-}
-
-.hero .cta {
-  display: inline-block;
-  padding: 14px 28px;
-  background: linear-gradient(135deg, #8c52ff, #b266ff);
-  color: #fff;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 0 25px rgba(140,82,255,0.6);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hero .cta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(140,82,255,0.9);
-}
-
-/* ================= HIERARQUIA ================= */
-
-.container h1 {
-  font-size: 36px;
-  margin-bottom: 24px;
-}
-
-.container h2 {
-  font-size: 22px;
-  margin-bottom: 12px;
-}
-
-.container p {
-  font-size: 16px;
-  color: #ddd;
 }
