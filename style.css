@@ -179,3 +179,15 @@ h1, h2, h3 {
 .live-banner:hover {
   transform: scale(1.05);
 }
+/* ================= LAYOUT MATCHUPS ================= */
+
+.layout {
+  display: flex;
+}
+
+.content {
+  margin-left: 220px; /* mesma largura do sidebar */
+  padding: 40px;
+  width: calc(100% - 220px);
+  min-height: 100vh;
+}
