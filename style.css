@@ -41,11 +41,10 @@ nav a {
 nav a:hover {
     color: #ffffff;
 }
-
 .container {
     max-width: 1000px;
     margin: auto;
-    padding: 40px;
+    padding: 100px 40px 40px 40px;
 }
 
 h1, h2 {
@@ -66,6 +65,7 @@ h1, h2 {
     border-top: 1px solid #6a00ff55;
     color: #888;
 }
+
 
 
 
