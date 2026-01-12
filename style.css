@@ -56,6 +56,10 @@ nav a:hover {
   padding: 40px 24px 80px;
 }
 
+body {
+  padding-top: 64px; /* compensa o header fixo */
+}
+
 /* ================= TITLES ================= */
 
 h1, h2 {
