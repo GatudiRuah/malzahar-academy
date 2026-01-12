@@ -4,11 +4,17 @@ body {
     background: #0a0a0f;
     color: #e5e5f0;
 }
-
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: linear-gradient(90deg, #2a004f, #0a0a0f);
-    padding: 20px;
+    padding: 15px 20px;
     border-bottom: 2px solid #6a00ff;
+    z-index: 999;
+}
+
 }
 
 nav a {
@@ -46,3 +52,4 @@ h1, h2 {
     border-top: 1px solid #6a00ff55;
     color: #888;
 }
+
