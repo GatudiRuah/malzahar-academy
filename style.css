@@ -3,11 +3,12 @@ html {
 }
 
 body {
+  font-family: "Inter" !important;
   background: #0b0b10;
   color: #eaeaea;
-  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
   margin: 0;
 }
+
 
 /* ================= HEADER ================= */
 
