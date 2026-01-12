@@ -140,28 +140,23 @@ body {
 
 #backToTop {
   position: fixed;
+  left: 14px;
   bottom: 24px;
-  left: 260px; /* alinhado com a sidebar */
-  z-index: 9999;
-
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-
-  background: linear-gradient(135deg, #6a00ff, #9b5cff);
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #8c52ff, #b266ff);
   color: white;
-  font-size: 22px;
   border: none;
+  border-radius: 50%;
+  font-size: 20px;
   cursor: pointer;
-
-  box-shadow: 0 0 14px rgba(140, 80, 255, 0.7);
-  transition: all 0.3s ease;
-
+  z-index: 9999;
+  box-shadow: 0 0 15px rgba(140, 82, 255, 0.6);
   opacity: 0;
-  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
 #backToTop:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 22px rgba(140, 80, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(140, 82, 255, 0.9);
 }
