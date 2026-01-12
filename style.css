@@ -1,47 +1,107 @@
-/* ================= HEADER ================= */
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  background: #0b0b14;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   HEADER (BARRA SUPERIOR)
+========================= */
 header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 64px;
+  width: 100%;
   background: linear-gradient(90deg, #2a004f, #0a0a0f);
   border-bottom: 2px solid #6a00ff;
-  z-index: 1000;
   display: flex;
   align-items: center;
+  z-index: 2000; /* MAIOR que sidebar */
 }
 
-/* ================= MENU ================= */
 nav {
-  width: 100%;
-  padding: 0 24px;
   display: flex;
-  align-items: center;
+  gap: 24px;
+  padding-left: 24px;
 }
 
-/* ================= SIDEBAR ================= */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #a97bff;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
 #sidebar {
   position: fixed;
-  top: 64px;
+  top: 64px; /* começa abaixo do header */
   left: 0;
-  width: 220px;
+  width: 240px;
   height: calc(100vh - 64px);
-  background: rgba(10, 10, 20, 0.95);
+  background: rgba(10,10,20,0.95);
   backdrop-filter: blur(10px);
-  padding: 15px;
+  padding: 16px;
   overflow-y: auto;
-  z-index: 500;
+  border-right: 1px solid #6a00ff;
+  z-index: 1000;
 }
 
-/* ================= CONTEÚDO ================= */
+#sidebar h2 {
+  color: #a97bff;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+#sidebar a {
+  display: block;
+  padding: 6px 10px;
+  color: #ddd;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  transition: 0.2s;
+}
+
+#sidebar a:hover {
+  background: rgba(140, 80, 255, 0.2);
+}
+
+#sidebar a.active {
+  background: rgba(140, 80, 255, 0.4);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
 .container {
-  max-width: 1000px;
-  margin-left: 220px;
-  margin-top: 64px;
-  padding: 40px;
+  margin-left: 240px;  /* espaço da sidebar */
+  padding-top: 96px;   /* espaço do header */
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1200px;
 }
 
-.matchup-box {
-  scroll-margin-top: 80px;
-}
+/* =========================
+   CARDS
+========================= */
+.card {
+  background: rgba(20,20,30,0.9);
+  border: 1px solid #6a00ff;
+  border-radius: 12px;
+  pa
