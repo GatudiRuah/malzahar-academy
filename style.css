@@ -50,6 +50,12 @@ nav a:hover {
     padding: 100px 40px 40px 40px;
 }
 
+.container {
+    margin-left: 260px;
+    margin-top: 64px;
+}
+
+
 /* TÍTULOS */
 h1, h2 {
     color: #b47cff;
@@ -73,16 +79,17 @@ h1, h2 {
 }
 #sidebar {
     position: fixed;
-    top: 64px;
+    top: 64px; /* altura do header */
     left: 0;
     width: 220px;
-    height: 100vh;
+    height: calc(100vh - 64px);
     background: rgba(10, 10, 20, 0.95);
     backdrop-filter: blur(10px);
     padding: 15px;
     overflow-y: auto;
     z-index: 999;
 }
+
 
 #sidebar h2 {
     color: #9b59ff;
@@ -109,6 +116,7 @@ h1, h2 {
 body {
     margin-left: 240px;
 }
+
 
 
 
