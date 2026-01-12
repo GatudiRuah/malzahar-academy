@@ -166,7 +166,7 @@ h1, h2 {
 #backToTop {
   position: fixed;
   bottom: 32px;
-  right: calc((100vw - 1000px) / 2 + 32px);
+  right: 32px;
   width: 42px;
   height: 42px;
   background: linear-gradient(135deg, #8c52ff, #b266ff);
