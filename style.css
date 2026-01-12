@@ -73,7 +73,7 @@ h1, h2 {
 }
 #sidebar {
     position: fixed;
-    top: 0;
+    top: 64px;
     left: 0;
     width: 220px;
     height: 100vh;
@@ -109,6 +109,7 @@ h1, h2 {
 body {
     margin-left: 240px;
 }
+
 
 
 
