@@ -5,6 +5,7 @@ body {
     color: #e5e5f0;
 }
 header {
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,9 +20,17 @@ header {
 
 nav a {
     color: #c8b6ff;
-    margin-right: 20px;
+    margin-right: 24px;
     text-decoration: none;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav a:hover {
@@ -52,4 +61,5 @@ h1, h2 {
     border-top: 1px solid #6a00ff55;
     color: #888;
 }
+
 
