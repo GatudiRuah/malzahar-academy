@@ -48,7 +48,7 @@
 <a data-target="sylas" href="#sylas">Sylas</a>
 <a data-target="syndra" href="#syndra">Syndra</a>
 <a data-target="taliyah" href="#taliyah">Taliyah</a>
-<a data-target="tf" href="#twistedfate">Twisted Fate</a>
+<a data-target="tf" href="#tf">Twisted Fate</a>
 <a data-target="talon" href="#talon">Talon</a>
 <a data-target="veigar" href="#veigar">Veigar</a>
 <a data-target="velkoz" href="#velkoz">Vel’Koz</a>
@@ -4269,6 +4269,25 @@
 <footer class="site-footer">
   © Gatudi Ruah — Malzahar Academy 2026
 </footer>
+<script>
+const btn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    btn.style.opacity = "1";
+    btn.style.pointerEvents = "auto";
+  } else {
+    btn.style.opacity = "0";
+    btn.style.pointerEvents = "none";
+  }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+</body>
+</html>
         
 </body>
 </html>
