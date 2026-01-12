@@ -1,37 +1,12 @@
-/* ================= RESET BÁSICO ================= */
-
 html {
   scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
   background: #0b0b10;
   color: #eaeaea;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
   margin: 0;
-}
-
-/* Títulos com peso e tracking premium */
-h1, h2, h3 {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #b47cff;
-}
-
-/* Texto confortável */
-p {
-  line-height: 1.7;
-  margin-bottom: 14px;
-}
-
-ul li {
-  margin-bottom: 6px;
 }
 
 /* ================= HEADER ================= */
@@ -62,11 +37,11 @@ nav a {
   color: #ffffff;
   margin-right: 24px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
   display: flex;
   align-items: center;
   gap: 6px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
 }
 
 nav a:hover {
@@ -76,23 +51,28 @@ nav a:hover {
 /* ================= LAYOUT ================= */
 
 .container {
-  max-width: 1120px;
+  max-width: 1000px;
   margin-left: 260px;
   margin-top: 64px;
   margin-right: auto;
   padding: 40px;
 }
 
+/* ================= TITLES ================= */
+
+h1, h2 {
+  color: #b47cff;
+}
+
 /* ================= CARDS ================= */
 
 .card {
   background: #13131c;
-  border: 1px solid rgba(140, 82, 255, 0.3);
-  padding: 24px;
-  margin-bottom: 24px;
-  border-radius: 12px;
+  border: 1px solid #6a00ff55;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
   line-height: 1.65;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* ================= FOOTER ================= */
@@ -130,12 +110,12 @@ nav a:hover {
   display: block;
   color: #ddd;
   text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  margin-bottom: 6px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 4px;
   transition: 0.2s;
   font-size: 14px;
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
 #sidebar a:hover,
@@ -151,7 +131,7 @@ nav a:hover {
 #sidebar a.active {
   background: rgba(140, 80, 255, 0.2);
   color: #b47cff;
-  font-weight: 700;
+  font-weight: bold;
   border-left: 3px solid #9b5cff;
 }
 
@@ -167,11 +147,11 @@ nav a:hover {
   opacity: 0.6;
 }
 
-/* ================= MATCHUPS ================= */
+/* ================= MATCHUP VISUAL ================= */
 
 .matchup-box h2 {
   margin-top: 36px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   border-bottom: 1px solid rgba(155, 95, 255, 0.25);
   font-size: 22px;
 }
@@ -181,14 +161,14 @@ nav a:hover {
   color: #c9a6ff;
 }
 
-/* ================= BOTÃO TOPO ================= */
+/* ================= BACK TO TOP ================= */
 
 #backToTop {
   position: fixed;
   bottom: 32px;
-  right: 32px;
-  width: 44px;
-  height: 44px;
+  right: calc((100vw - 1000px) / 2 + 32px);
+  width: 42px;
+  height: 42px;
   background: linear-gradient(135deg, #8c52ff, #b266ff);
   color: white;
   border: none;
@@ -196,12 +176,12 @@ nav a:hover {
   font-size: 20px;
   cursor: pointer;
   z-index: 9999;
-  box-shadow: 0 0 18px rgba(140, 82, 255, 0.6);
+  box-shadow: 0 0 15px rgba(140, 82, 255, 0.6);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
 #backToTop:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 28px rgba(140, 82, 255, 0.9);
+  box-shadow: 0 0 25px rgba(140, 82, 255, 0.9);
 }
