@@ -138,26 +138,26 @@ body {
   border-left: 3px solid #9b5cff;
 }
 
-}
 #backToTop {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: linear-gradient(135deg, #7a2cff, #b35cff);
-  color: white;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #9b5cff, #5b2cff);
   border: none;
-  padding: 14px 18px;
   border-radius: 50%;
-  font-size: 20px;
+  color: white;
+  font-size: 22px;
   cursor: pointer;
   opacity: 0;
-  transition: 0.3s;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 9999;
-  box-shadow: 0 0 15px rgba(140, 80, 255, 0.6);
+  box-shadow: 0 0 15px rgba(155, 95, 255, 0.6);
 }
 
 #backToTop:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(140, 80, 255, 0.9);
+  box-shadow: 0 0 25px rgba(155, 95, 255, 0.9);
 }
-
