@@ -71,5 +71,40 @@ h1, h2 {
     border-top: 1px solid #6a00ff55;
     color: #888;
 }
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: rgba(10, 10, 20, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+#sidebar h2 {
+    color: #9b59ff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#sidebar a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+#sidebar a:hover {
+    background: #9b59ff;
+    color: black;
+}
+
 
 
