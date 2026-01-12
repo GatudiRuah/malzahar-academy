@@ -1,136 +1,133 @@
-/* RESET */
-* {
-  box-sizing: border-box;
-}
-
-/* BODY */
 body {
-  margin: 0;
-  background: #0b0b14;
-  color: #eee;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0a0a0f;
+    color: #e5e5f0;
 }
 
-/* === FIXAR HEADER NA FRENTE DE TUDO === */
+/* HEADER FIXO */
 header {
-  position: fixed !important;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 64px;
-  z-index: 5000 !important; /* MUITO maior que a sidebar */
   background: linear-gradient(90deg, #2a004f, #0a0a0f);
   border-bottom: 2px solid #6a00ff;
-}
-
-/* O sidebar agora começa abaixo do header */
-#sidebar {
-  top: 64px !important;
-}
-
-/* Conteúdo não fica atrás do header */
-.container {
-  margin-top: 64px !important;
-  padding-top: 24px !important;
-}
-
-
-nav {
+  z-index: 1000; /* maior que o sidebar */
   display: flex;
-  gap: 24px;
-  padding-left: 24px;
+  align-items: center;
 }
 
+
+/* MENU */
+nav {
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+}
+
+/* LINKS DO MENU */
 nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+    color: #ffffff;
+    margin-right: 24px;
+    text-decoration: none;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.5px;
 }
 
 nav a:hover {
-  color: #a97bff;
+    color: #c8b6ff;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
+/* CONTEÚDO */
+.container {
+    max-width: 1000px;
+    margin-left: 260px;
+    margin-top: 64px;
+    margin-right: auto;
+    padding: 40px;
+}
+
+
+.container {
+    margin-left: 260px;
+    margin-top: 64px;
+}
+
+
+/* TÍTULOS */
+h1, h2 {
+    color: #b47cff;
+}
+
+/* CARDS */
+.card {
+    background: #13131c;
+    border: 1px solid #6a00ff55;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* RODAPÉ */
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #6a00ff55;
+    color: #888;
+}
 #sidebar {
   position: fixed;
-  top: 64px; /* começa abaixo do header */
+  top: 64px;
   left: 0;
-  width: 240px;
+  width: 220px;
   height: calc(100vh - 64px);
-  background: rgba(10,10,20,0.95);
+  background: rgba(10, 10, 20, 0.95);
   backdrop-filter: blur(10px);
-  padding: 16px;
+  padding: 15px;
   overflow-y: auto;
-  border-right: 1px solid #6a00ff;
-  z-index: 1000;
+  z-index: 500;
 }
 
+
+
 #sidebar h2 {
-  color: #a97bff;
-  text-align: center;
-  margin-bottom: 12px;
+    color: #9b59ff;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 #sidebar a {
-  display: block;
-  padding: 6px 10px;
-  color: #ddd;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-bottom: 4px;
-  transition: 0.2s;
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    transition: 0.2s;
+    font-size: 14px;
 }
 
 #sidebar a:hover {
-  background: rgba(140, 80, 255, 0.2);
+    background: #9b59ff;
+    color: black;
+}
+
+body {
+    background: #0b0b10;
+    color: #eaeaea;
+    font-family: "Inter", sans-serif;
+    margin: 0;
 }
 
 #sidebar a.active {
-  background: rgba(140, 80, 255, 0.4);
-  color: #fff;
+  background: rgba(140, 80, 255, 0.2);
+  color: #b47cff;
   font-weight: bold;
+  border-left: 3px solid #9b5cff;
 }
-
-/* =========================
-   CONTEÚDO
-========================= */
-.container {
-  margin-left: 240px;  /* espaço da sidebar */
-  padding-top: 96px;   /* espaço do header */
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 1200px;
-}
-
-/* =========================
-   CARDS
-========================= */
-.card {
-  background: rgba(20,20,30,0.9);
-  border: 1px solid #6a00ff;
-  border-radius: 12px;
-  pa
-
-  /* FIXA A BARRA SUPERIOR NO TOPO */
-header {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 64px;
-  z-index: 5000 !important; /* MAIOR que a sidebar */
-}
-
-/* Sidebar deve começar abaixo do header */
-#sidebar {
-  top: 64px !important;
-}
-
-/* Conteúdo deve descer abaixo do header */
-.container {
-  padding-top: 96px !important;
-}
-
