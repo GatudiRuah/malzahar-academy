@@ -6,6 +6,26 @@
 <title>Matchups — Malzahar</title>
 <link href="style.css" rel="stylesheet"/>
 </head>
+
+<button id="backToTop">⬆</button>
+
+<script>
+const btn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    btn.style.opacity = "1";
+  } else {
+    btn.style.opacity = "0";
+  }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+        
 <body>
 <header>
 <nav>
