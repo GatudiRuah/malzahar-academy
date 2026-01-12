@@ -1,53 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<title>Matchups — Malzahar</title>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <title>Matchups — Malzahar</title>
+  <link href="style.css" rel="stylesheet"/>
 </head>
 
-<button id="backToTop">⬆</button>
-
-<script>
-const btn = document.getElementById("backToTop");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    btn.style.opacity = "1";
-  } else {
-    btn.style.opacity = "0";
-  }
-});
-
-btn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-</script>
-
-        
 <body>
+
 <header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="guia.html">Guia</a>
+    <a href="builds.html">Builds</a>
+    <a href="matchups.html">Matchups</a>
+    <a href="carregar.html">Como Carregar</a>
+    <a href="bronze-ouro.html">Bronze → Ouro</a>
+  </nav>
+</header>
 
 <button id="backToTop">⬆</button>
-  
-<nav>
-<a href="index.html">Home</a>
-<a href="guia.html">Guia</a>
-<a href="builds.html">Builds</a>
-<a href="matchups.html">Matchups</a>
-<a href="carregar.html">Como Carregar</a>
-<a href="bronze-ouro.html">Bronze → Ouro</a>
-</nav>
-</header>
+
 <div class="container">
-<h1>Matchups de Malzahar (A–Z)</h1>
-<div class="card" id="ahri">
-<h2>Ahri</h2>
-<div class="matchup-box">
-<h2>🧠 Visão geral do matchup</h2>
-<div class="columns">
-<div class="col">
+  <h1>Matchups de Malzahar (A–Z)</h1>
+
+  <div class="card" id="ahri">
+    <h2>Ahri</h2>
+    <div class="matchup-box">
+      <h2>🧠 Visão geral do matchup</h2>
+      <div class="columns">
+        <div class="col">
+
 <h3>Ahri quer:</h3>
 <ul>
 <li>Poke</li>
