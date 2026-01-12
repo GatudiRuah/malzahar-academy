@@ -4162,23 +4162,7 @@
 </div>
 <div>
 
-<div class="footer">© Gatudi Ruah — Malzahar Academy</div>
-<script>
-const sections = document.querySelectorAll(".card[id]");
-const navLinks = document.querySelectorAll("#sidebar a");
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach(section => {
-    const top = section.offsetTop - 120;
-    if (window.scrollY >= top) current = section.id;
-  });
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.dataset.target === current) link.classList.add("active");
-  });
-});
-</script>
-</div>
+
 
 
 
@@ -4262,4 +4246,9 @@ window.addEventListener("scroll", () => {
         Ela pula. Você fecha.
     </p>
 </div>
-</div></div></body></html>
+</div></div>
+<footer class="site-footer">
+  © Gatudi Ruah — Malzahar Academy
+</footer>
+
+</body></html>
