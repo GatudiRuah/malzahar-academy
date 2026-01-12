@@ -185,3 +185,60 @@ h1, h2 {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(140, 82, 255, 0.9);
 }
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+  padding: 120px 40px 80px;
+  background: radial-gradient(circle at top, rgba(140,82,255,0.15), transparent 60%);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #caa6ff;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 32px;
+  color: #d6c7ff;
+  line-height: 1.7;
+}
+
+.hero .cta {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #8c52ff, #b266ff);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(140,82,255,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero .cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(140,82,255,0.9);
+}
+
+/* ================= HIERARQUIA ================= */
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.container h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.container p {
+  font-size: 16px;
+  color: #ddd;
+}
