@@ -47,9 +47,12 @@ nav a:hover {
 /* CONTEÚDO */
 .container {
     max-width: 1000px;
-    margin: auto;
-    padding: 100px 40px 40px 40px;
+    margin-left: 260px;
+    margin-top: 64px;
+    margin-right: auto;
+    padding: 40px;
 }
+
 
 .container {
     margin-left: 260px;
@@ -116,7 +119,10 @@ h1, h2 {
 }
 
 body {
-    margin-left: 240px;
+    background: #0b0b10;
+    color: #eaeaea;
+    font-family: "Inter", sans-serif;
+    margin: 0;
 }
 
 #sidebar a.active {
